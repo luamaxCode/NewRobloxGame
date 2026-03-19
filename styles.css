@@ -1,0 +1,41 @@
+:root {
+  --bg: #111;
+  --panel: #222;
+  --text: #eee;
+  --accent: #4CAF50;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+  background: var(--panel);
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 6px 10px;
+  border: 1px solid #555;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background: #444; }
+button[data-id] { font-weight: bold; }
+
+#gameCanvas {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 48px);
+  background: #87ceeb; /* небо фон для примера */
+}
