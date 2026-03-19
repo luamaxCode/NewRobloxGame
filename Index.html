@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>Мини Roblox Studio (упрощённая версия)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toolbar" class="toolbar">
+    <span>Выберите блок:</span>
+    <button class="block-btn" data-id="1" aria-pressed="true" title="Grass">Grass</button>
+    <button class="block-btn" data-id="2" aria-pressed="false">Dirt</button>
+    <button class="block-btn" data-id="3" aria-pressed="false">Stone</button>
+    <button id="saveBtn">Save</button>
+    <button id="loadBtn">Load</button>
+    <button id="exportBtn">Export</button>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Загрузка файлов в нужном порядке -->
+  <script src="blocks.js"></script>
+  <script src="world.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
